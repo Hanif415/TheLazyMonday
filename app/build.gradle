@@ -56,4 +56,11 @@ dependencies {
 
     // Retrofit with Moshi Converter
     implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
+
+    // Room
+    implementation "androidx.room:room-runtime:$version_room"
+    annotationProcessor "androidx.room:room-compiler:$version_room"
+
+    implementation "androidx.paging:paging-runtime:$paging_version" // For Kotlin use paging-runtime-ktx
+
 }

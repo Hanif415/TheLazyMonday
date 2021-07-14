@@ -1,12 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext{
+    ext {
         kotlin_version = "1.5.10"
         version_moshi = "1.12.0"
         version_dagger = "2.28.3"
         version_dagger_compailer = "2.27"
         version_loggingInterceptor = "4.9.1"
         version_retrofit = "2.9.0"
+        version_room = "2.3.0"
+        paging_version = "2.1.2"
     }
     repositories {
         google()

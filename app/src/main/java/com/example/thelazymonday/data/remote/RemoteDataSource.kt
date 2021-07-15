@@ -3,6 +3,7 @@ package com.example.thelazymonday.data.remote
 import androidx.lifecycle.LiveData
 import com.example.thelazymonday.data.remote.response.ApiResponse
 import com.example.thelazymonday.data.remote.response.GameNewsResponseItem
+import com.example.thelazymonday.utils.EspressoIdlingResource
 
 class RemoteDataSource {
     companion object {
@@ -16,6 +17,7 @@ class RemoteDataSource {
     }
 
     fun getGameNews(): LiveData<ApiResponse<List<GameNewsResponseItem>>> {
+        EspressoIdlingResource.increment()
 
     }
 }

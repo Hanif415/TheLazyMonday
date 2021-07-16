@@ -15,7 +15,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrume5ntationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -30,6 +30,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    buildFeatures{
+        viewBinding true
     }
 }
 
@@ -62,7 +65,9 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:$version_room"
 
     // pagination
-    implementation "androidx.paging:paging-runtime:3.3.0"
+    def paging_version = "2.1.2"
+
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
 
     // idling resource
     implementation "com.android.support.test.espresso:espresso-idling-resource:$idlingResource_version"

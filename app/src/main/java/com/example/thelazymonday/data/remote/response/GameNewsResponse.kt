@@ -8,7 +8,7 @@ import kotlinx.android.parcel.Parcelize
 data class GameNewsResponse(
 
 	@Json(name="GameNewsResponse")
-	val gameNewsResponse: List<GameNewsResponseItem?>? = null
+	val gameNewsResponse: List<GameNewsResponseItem>? = null
 ) : Parcelable
 
 @Parcelize
